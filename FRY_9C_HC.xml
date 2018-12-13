@@ -1,0 +1,1762 @@
+<object stamp="a654a07d-7b56-4020-b22f-10e93a8db1ca_1437487159901" type="Portfolio" version="12">
+	<property name="name" value="FRY_9C_HC" valueType="string"/>
+	<property name="description" value="Schedule HC - Consolidated Balance Sheet" valueType="string"/>
+	<property name="objectId" value="57f4ed62-d011-4e4c-bc76-95976ab1b29f" valueType="string"/>
+	<property name="branchId" value="344a363e-029f-4b27-beee-988f3d086573" valueType="string"/>
+	<property name="comment" value="11-June-2010 at 15:00&#xa;1) Model RDW_9C_Baseline_PnL to MDRM HC.26.a 3247 per SRS #11136159&#xa;&#xa;30-July-2010 at 10:06&#xa;1) Model RDW_9C_Baseline_PnL to MDRM HC.26.a 3247 per SRS #11136159" valueType="string"/>
+	<property name="models" valueType="table">
+		<object type="ModelBasedTask:modelEntry" version="3">
+			<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+			<property name="instanceSelectionRule" valueType="object">
+				<object type="InstanceSelectionRule" version="3">
+					<property name="instanceDateRule" valueType="object">
+						<object type="InstanceSelectionRule:rule" version="3">
+							<property name="type" value="EQUAL" valueType="string"/>
+						</object>
+					</property>
+					<property name="instanceKeyRules" valueType="table"/>
+				</object>
+			</property>
+		</object>
+	</property>
+	<property name="requiresAllModels" value="false" valueType="boolean"/>
+	<property name="parameters" valueType="table"/>
+	<property name="detailSet" valueType="url"/>
+	<property name="dbSourceForResults" valueType="url">DBSource["ORACLE"{3a2b1337-437c-4408-a9b9-a319bd243e1d}]</property>
+	<property name="storageType" value="CONTINUOUS_PARTITION" valueType="string"/>
+	<property name="additionalIndices" valueType="table"/>
+	<property name="createIndexesOnStreamColumns" value="false" valueType="boolean"/>
+	<property name="archivalProperties" valueType="object">
+		<object type="ArchivalProperties" version="2">
+			<property name="daily" value="false" valueType="boolean"/>
+			<property name="weekly" value="false" valueType="boolean"/>
+			<property name="monthly" value="false" valueType="boolean"/>
+			<property name="quarterly" value="false" valueType="boolean"/>
+			<property name="semiAnnually" value="false" valueType="boolean"/>
+			<property name="annually" value="false" valueType="boolean"/>
+			<property name="intraDay" value="false" valueType="boolean"/>
+			<property name="userDefined" value="false" valueType="boolean"/>
+		</object>
+	</property>
+	<property name="portfolioResultAlias" value="" valueType="string"/>
+	<property name="fourEyesCheck" value="false" valueType="boolean"/>
+	<property name="producingIsRoot" value="false" valueType="boolean"/>
+	<property name="ignoreErrorsInAggregatedConditoinPlacement" value="false" valueType="boolean"/>
+	<property name="makeAsOfDateColumnNullable" value="true" valueType="boolean"/>
+	<property name="computeStatistics" value="FOR_ALL_COLUMNS" valueType="string"/>
+	<property name="allowMultipleNodesPerRecord" value="false" valueType="boolean"/>
+	<property name="executionAlgorithm" value="optimized_for_few_aggregations" valueType="string"/>
+	<property name="levels" valueType="table">
+		<object type="Portfolio:level" version="5">
+			<property name="name" value="rpt_grouping" valueType="string"/>
+			<property name="description" value="Report_Grouping" valueType="string"/>
+			<property name="id" value="227d6e58-28b3-402b-95ad-7aa63f80d637" valueType="string"/>
+			<property name="defaultValue" value="" valueType="string"/>
+		</object>
+		<object type="Portfolio:level" version="5">
+			<property name="name" value="rpt_line" valueType="string"/>
+			<property name="description" value="Report_Line" valueType="string"/>
+			<property name="id" value="e3b03838-055b-4b9f-982f-070f671d693a" valueType="string"/>
+			<property name="defaultValue" value="" valueType="string"/>
+		</object>
+		<object type="Portfolio:level" version="5">
+			<property name="name" value="rpt_mdrm" valueType="string"/>
+			<property name="description" value="Report_MDRM" valueType="string"/>
+			<property name="id" value="91d89d45-d0ba-4bf0-9f38-ae03975595d9" valueType="string"/>
+			<property name="defaultValue" value="" valueType="string"/>
+		</object>
+	</property>
+	<property name="additionalFields" valueType="table">
+		<object type="Portfolio:additionalField" version="7">
+			<property name="name" value="axiom_gl_rec" valueType="string"/>
+			<property name="description" value="axiom_gl_rec" valueType="string"/>
+			<property name="id" value="e5b10488-35d3-4c25-a723-6ee352f2de42" valueType="string"/>
+			<property name="title" value="" valueType="string"/>
+			<property name="type" value="VARCHAR" valueType="string"/>
+			<property name="size" value="1" valueType="integer"/>
+			<property name="allowNulls" value="false" valueType="boolean"/>
+			<property name="allowNullsFixed" value="true" valueType="boolean"/>
+			<property name="defaultValue" value="'Y'" valueType="string"/>
+			<property name="lookupSource" valueType="url"/>
+		</object>
+	</property>
+	<property name="hierarchy" valueType="tree">
+		<objectNode type="Portfolio:rootnode" version="7">
+			<property name="condition" valueType="tree">
+				<objectNode type="Condition" version="3">
+					<property name="isNegated" value="false" valueType="boolean"/>
+					<property name="groupingOperator" value="AND" valueType="string"/>
+				</objectNode>
+			</property>
+			<property name="expandedConditions" valueType="object">
+				<object type="Portfolio:expandedConditions" version="1">
+					<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+					<property name="includeInherited" value="false" valueType="boolean"/>
+				</object>
+			</property>
+			<property name="actions" valueType="table"/>
+			<children>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_01" valueType="string"/>
+					<property name="description" value="Cash and balances due from depository institutions" valueType="string"/>
+					<property name="id" value="59a31306-e081-46ab-810f-31a601976805" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_01.a" valueType="string"/>
+							<property name="description" value="Cash and balances due from depository institutions: Noninterest-bearing balances and currency and coin" valueType="string"/>
+							<property name="id" value="af6119b7-f788-46a4-99bd-27ef52071c1d" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK0081" valueType="string"/>
+									<property name="description" value="Cash and balances due from depository institutions: Noninterest-bearing balances and currency and coin" valueType="string"/>
+									<property name="id" value="f339cdf4-43df-4cbb-9c6b-4f0a3a6f9517" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_0081"{a2d32f48-16e6-417b-9a11-40c530c63946:e2176884-9eb0-488c-8c9d-54a2715be31c}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_01.b.1" valueType="string"/>
+							<property name="description" value="Interest-bearing balances: In the U.S. offices" valueType="string"/>
+							<property name="id" value="590ec759-7233-4532-ae3b-f382236d5a72" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK0395" valueType="string"/>
+									<property name="description" value="Interest-bearing balances: In the U.S. offices" valueType="string"/>
+									<property name="id" value="2745291a-1477-471b-8271-a533306555bf" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_0395"{a2d32f48-16e6-417b-9a11-40c530c63946:885c3f07-81d7-4c0f-9770-7d203dd564dd}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_01.b.2" valueType="string"/>
+							<property name="description" value="Interest-bearing balances: In foreign offices, Edge and Agreement subsidiaries, and IBFs" valueType="string"/>
+							<property name="id" value="5fbaeeaa-07d8-49f1-9e50-694099a66fcc" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK0397" valueType="string"/>
+									<property name="description" value="Interest-bearing balances: In foreign offices, Edge and Agreement subsidiaries, and IBFs" valueType="string"/>
+									<property name="id" value="1a3b6338-ae3a-4719-9fc3-b85d8c35a56f" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_0397"{a2d32f48-16e6-417b-9a11-40c530c63946:cf840988-4a5f-4ea6-9dfd-3a67029fbad7}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_03" valueType="string"/>
+					<property name="description" value="Federal funds sold and securities purchased under agreements to resell" valueType="string"/>
+					<property name="id" value="82be76b4-d275-433f-9b65-83874c65f126" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_03.a" valueType="string"/>
+							<property name="description" value="Federal funds sold in domestic offices" valueType="string"/>
+							<property name="id" value="55fde977-50e2-4f97-aef3-91649901dd93" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHDMB987" valueType="string"/>
+									<property name="description" value="Federal funds sold in domestic offices" valueType="string"/>
+									<property name="id" value="9a7d5cb6-e287-44fc-92e3-f3be53081782" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_B987"{a2d32f48-16e6-417b-9a11-40c530c63946:6392f942-63da-4233-9d99-6276c7d550e1}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_03.b" valueType="string"/>
+							<property name="description" value="Securities purchased under agreements to resell" valueType="string"/>
+							<property name="id" value="7ef8b2cb-9cfa-47f5-bbb2-9f13b4bdfc4a" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCKB989" valueType="string"/>
+									<property name="description" value="Securities purchased under agreements to resell" valueType="string"/>
+									<property name="id" value="fda1b537-ab43-4952-930d-bcd858483606" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_B989"{a2d32f48-16e6-417b-9a11-40c530c63946:662089f9-1d1b-42fd-a652-e1f8a54168ca}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_04" valueType="string"/>
+					<property name="description" value="Loans and lease financing receivables" valueType="string"/>
+					<property name="id" value="23cad64f-8ccf-40ee-bcc9-70466f07b524" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_04.a" valueType="string"/>
+							<property name="description" value="Loans and leases held for sale" valueType="string"/>
+							<property name="id" value="6fe1f273-f6cd-428f-98be-19a58c8a4f10" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK5369" valueType="string"/>
+									<property name="description" value="Loans and leases held for sale" valueType="string"/>
+									<property name="id" value="07105a5c-ec58-4037-8e6a-26a372e7b55f" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_5369"{a2d32f48-16e6-417b-9a11-40c530c63946:e81fa7b7-7ecb-423e-81bf-3e747caf753e}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_04.b" valueType="string"/>
+							<property name="description" value="Loans and leases, net of unearned income" valueType="string"/>
+							<property name="id" value="6c3c0119-31aa-4b62-a7f4-1f989f9c8183" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCKB528" valueType="string"/>
+									<property name="description" value="Loans and leases, net of unearned income" valueType="string"/>
+									<property name="id" value="6ca4aabb-5bcc-4519-92c9-90d18a3a286f" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_B528"{a2d32f48-16e6-417b-9a11-40c530c63946:ec9b62bc-5d1a-4a02-ad04-2f1c050ee278}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_04.c" valueType="string"/>
+							<property name="description" value="LESS: Allowance for loan and lease losses" valueType="string"/>
+							<property name="id" value="c09a5918-2734-494a-8b9b-154b0ac898a3" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3123" valueType="string"/>
+									<property name="description" value="LESS: Allowance for loan and lease losses" valueType="string"/>
+									<property name="id" value="dfcf471f-f885-4d85-acc1-81c15a6494f2" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3123"{a2d32f48-16e6-417b-9a11-40c530c63946:bdca307f-d611-4129-9f99-52b3db34bece}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_06" valueType="string"/>
+					<property name="description" value="Premises and fixed assets (including capitalized leases)" valueType="string"/>
+					<property name="id" value="ee96b262-c86e-415d-8c6c-9f2b8b2bdfd0" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_06" valueType="string"/>
+							<property name="description" value="Premises and fixed assets (including capitalized leases)" valueType="string"/>
+							<property name="id" value="fa3febf4-5695-407e-a11e-6f6a8b32c2d8" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK2145" valueType="string"/>
+									<property name="description" value="Premises and fixed assets (including capitalized leases)" valueType="string"/>
+									<property name="id" value="fdd07a4d-4944-48c7-ab13-23f35e965b3f" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_2145"{a2d32f48-16e6-417b-9a11-40c530c63946:081fdabc-ad0b-439c-94f5-7eadb91fb742}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_08" valueType="string"/>
+					<property name="description" value="Investments in unconsolidated subsidiaries and associated companies" valueType="string"/>
+					<property name="id" value="dd791118-1c1b-4201-a044-216e32f261d1" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_08" valueType="string"/>
+							<property name="description" value="Investments in unconsolidated subsidiaries and associated companies" valueType="string"/>
+							<property name="id" value="224f2bf4-a32e-4080-b5d2-588a659ef34b" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK2130" valueType="string"/>
+									<property name="description" value="Investments in unconsolidated subsidiaries and associated companies" valueType="string"/>
+									<property name="id" value="b106be4b-3b75-486a-a216-1371658c1a93" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_2130"{a2d32f48-16e6-417b-9a11-40c530c63946:95875d50-f077-4d68-ab17-831956dc6eee}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_09" valueType="string"/>
+					<property name="description" value="Direct and indirect investments in real estate ventures" valueType="string"/>
+					<property name="id" value="d651f273-a23e-4b1c-b099-465e581df0bb" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_9" valueType="string"/>
+							<property name="description" value="Direct and indirect investments in real estate ventures" valueType="string"/>
+							<property name="id" value="f627e1fb-126e-4700-a5cf-8cd41156e58d" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3656" valueType="string"/>
+									<property name="description" value="Direct and indirect investments in real estate ventures" valueType="string"/>
+									<property name="id" value="9c6c8d15-dde9-4dc6-b00f-eb7212f0d3ff" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3656"{a2d32f48-16e6-417b-9a11-40c530c63946:ab2f0ea0-82d5-481b-9d1f-92405e730a69}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_10" valueType="string"/>
+					<property name="description" value="Intangible assets" valueType="string"/>
+					<property name="id" value="464b694c-8bd1-4df8-877e-89475e956597" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_10.a" valueType="string"/>
+							<property name="description" value="Intangible assets: Goodwill" valueType="string"/>
+							<property name="id" value="014a95d9-1e28-4c3a-8c5a-6ed4a60d613b" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3163" valueType="string"/>
+									<property name="description" value="Intangible assets: Goodwill" valueType="string"/>
+									<property name="id" value="ce56a13d-854f-4a24-a99a-762e53fc8b3b" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3163"{a2d32f48-16e6-417b-9a11-40c530c63946:e75e7a18-0065-4e54-bbcf-197a905740a7}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_13.a" valueType="string"/>
+					<property name="description" value="Deposits: In domestic offices (from Schedule HC_E)" valueType="string"/>
+					<property name="id" value="ef72bff1-6404-4b9f-8633-bba929a167f5" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_13.a.1" valueType="string"/>
+							<property name="description" value="Deposits: In domestic offices (from Schedule HC_E): Noninterest Bearing" valueType="string"/>
+							<property name="id" value="45fe206a-5c48-463f-9d5c-6be9df55c8a3" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHDM6631" valueType="string"/>
+									<property name="description" value="Deposits: In domestic offices (from Schedule HC_E): Noninterest Bearing" valueType="string"/>
+									<property name="id" value="020cfd4d-ddc1-4973-a65d-38f43cf14e9c" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_BHDM6631"{a2d32f48-16e6-417b-9a11-40c530c63946:86360037-4eb8-4629-855e-9b3b9ec2204a}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_13.a.2" valueType="string"/>
+							<property name="description" value="Deposits: In domestic offices (from Schedule HC_E): Interest Bearing" valueType="string"/>
+							<property name="id" value="f1f29214-4677-4b2a-83f4-ee58db0f66a6" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHDM6636" valueType="string"/>
+									<property name="description" value="Deposits: In domestic offices (from Schedule HC_E): Interest Bearing" valueType="string"/>
+									<property name="id" value="fb345e3f-147a-4df1-860e-93b9d46a3a6f" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_BHDM6636"{a2d32f48-16e6-417b-9a11-40c530c63946:9ef34c5a-e149-47c9-81d6-521eb968b756}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_13.b" valueType="string"/>
+					<property name="description" value="Deposits: In foreign offices, Edge and Agreement subsidiaries, and IBFs" valueType="string"/>
+					<property name="id" value="50ffa4a4-9fb9-4e03-a792-abd259f716a3" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_13.b.1" valueType="string"/>
+							<property name="description" value="Deposits: In foreign offices, Edge and Agreement subsidiaries, and IBFs: Noninterest-bearing" valueType="string"/>
+							<property name="id" value="996c0423-5272-4c98-b033-1c7afa046269" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHFN6631" valueType="string"/>
+									<property name="description" value="Deposits: In foreign offices, Edge and Agreement subsidiaries, and IBFs: Noninterest-bearing" valueType="string"/>
+									<property name="id" value="61e9ed2f-4d6a-4d2b-a751-4cf470a01609" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_BHFN6631"{a2d32f48-16e6-417b-9a11-40c530c63946:7125cf4e-97bb-4d31-8cb7-3c3018e21b64}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_13.b.2" valueType="string"/>
+							<property name="description" value="Deposits: In foreign offices, Edge and Agreement subsidiaries, and IBFs: Interest-bearing" valueType="string"/>
+							<property name="id" value="e223ddba-2b3c-4e68-8ee8-5ebfb922fb63" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHFN6636" valueType="string"/>
+									<property name="description" value="Deposits: In foreign offices, Edge and Agreement subsidiaries, and IBFs: Interest-bearing" valueType="string"/>
+									<property name="id" value="717a4545-45d0-4fcf-a2c6-1bcab02ffde9" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_BHFN6636"{a2d32f48-16e6-417b-9a11-40c530c63946:6b7425b3-e402-4c68-82e1-d3f166aadff6}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_14" valueType="string"/>
+					<property name="description" value="Federal funds purchased and securities sold under agreements to repurchase" valueType="string"/>
+					<property name="id" value="85d25e59-d2a2-454d-b7fd-e17d882d7071" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_14.a" valueType="string"/>
+							<property name="description" value="Federal funds purchased and securities sold under agreements to repurchase: Federal funds purchased in domestic offices" valueType="string"/>
+							<property name="id" value="8bd83e14-c430-400c-b8b5-d0c5eac76c68" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHDMB993" valueType="string"/>
+									<property name="description" value="Federal funds purchased and securities sold under agreements to repurchase: Federal funds purchased in domestic offices" valueType="string"/>
+									<property name="id" value="2c32cef6-8f44-453f-8be5-522eed50fa0a" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_B993"{a2d32f48-16e6-417b-9a11-40c530c63946:2fe05540-c2ea-43ec-9cee-0286c0919dba}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_14.b" valueType="string"/>
+							<property name="description" value="Federal funds purchased and securities sold under agreements to repurchase: Securities sold under agreements to repurchase" valueType="string"/>
+							<property name="id" value="52301677-940c-4f39-8955-d64100d92203" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCKB995" valueType="string"/>
+									<property name="description" value="Federal funds purchased and securities sold under agreements to repurchase: Securities sold under agreements to repurchase" valueType="string"/>
+									<property name="id" value="97f76be4-c5cf-45d7-bb08-69e66f6b4078" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_B995"{a2d32f48-16e6-417b-9a11-40c530c63946:5cf55b97-0b25-483f-bda1-64ea8aa6b97c}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_19" valueType="string"/>
+					<property name="description" value="Subordinated notes" valueType="string"/>
+					<property name="id" value="84df8a26-46cf-49f7-a496-6aa90dc8e0e6" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_19.a" valueType="string"/>
+							<property name="description" value="Subordinated notes and debentures" valueType="string"/>
+							<property name="id" value="9ba0b507-7a47-4a1c-b718-77f26478e0a1" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK4062" valueType="string"/>
+									<property name="description" value="Subordinated notes and debentures" valueType="string"/>
+									<property name="id" value="a493b401-71a4-4f89-b46b-eb485647de66" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_4062"{a2d32f48-16e6-417b-9a11-40c530c63946:f423c8f4-3f36-47de-a6c3-e3ffdd684ba1}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_19.b" valueType="string"/>
+							<property name="description" value="Subordinated notes payable to unconsolidated trust issuing trust preferred securities, and trust preferred securities issued by consolidated special purpose entities" valueType="string"/>
+							<property name="id" value="2a7224e8-164a-4b11-84fd-206a5290570e" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCKC699" valueType="string"/>
+									<property name="description" value="Subordinated notes payable to unconsolidated trust issuing trust preferred securities, and trust preferred securities issued by consolidated special purpose entities" valueType="string"/>
+									<property name="id" value="786a1f04-1387-4433-a158-572897498f0a" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_C699"{a2d32f48-16e6-417b-9a11-40c530c63946:0549c1c2-8997-4631-900b-12ade215ac71}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_23" valueType="string"/>
+					<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Perpetual preferred stock and related surplus" valueType="string"/>
+					<property name="id" value="14fe966b-5c07-4888-8964-61d447588bb6" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_23" valueType="string"/>
+							<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Perpetual preferred stock and related surplus" valueType="string"/>
+							<property name="id" value="17b61076-13cc-449e-beaf-d9822e6ddeb0" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3283" valueType="string"/>
+									<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Perpetual preferred stock and related surplus" valueType="string"/>
+									<property name="id" value="d0e218a7-250e-43cb-897d-37a8573a09ef" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3283"{a2d32f48-16e6-417b-9a11-40c530c63946:5e80f6ec-3a0f-4d57-a1a6-816440f2e4a4}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_24" valueType="string"/>
+					<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Common stock (par value)" valueType="string"/>
+					<property name="id" value="facf740e-7c16-4171-9a73-179e18f7949a" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_24" valueType="string"/>
+							<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Common stock (par value)" valueType="string"/>
+							<property name="id" value="190d927d-57ba-48b8-93b0-c89f969d1bb7" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3230" valueType="string"/>
+									<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Common stock (par value)" valueType="string"/>
+									<property name="id" value="458155ef-b1ff-4bf8-9dac-8b9a075ca8c2" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3230"{a2d32f48-16e6-417b-9a11-40c530c63946:97821064-a67b-4b82-9af5-d0d44eb17b89}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_25" valueType="string"/>
+					<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Surplus (exclude all surplus related to preferred stock)" valueType="string"/>
+					<property name="id" value="ddab8712-6482-46f4-ba5b-1946996ea9b2" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_25" valueType="string"/>
+							<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Surplus (exclude all surplus related to preferred stock)" valueType="string"/>
+							<property name="id" value="e7722c1d-113a-4fe2-8189-133b4a6c8c05" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3240" valueType="string"/>
+									<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Surplus (exclude all surplus related to preferred stock)" valueType="string"/>
+									<property name="id" value="947214da-4676-412c-8b08-5bcff3879382" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3240"{a2d32f48-16e6-417b-9a11-40c530c63946:61001109-1f3f-4653-a1c9-b9e88d55fad6}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_26" valueType="string"/>
+					<property name="description" value="Equity Capital: Bank Holding Company Equity Capital" valueType="string"/>
+					<property name="id" value="cac75429-612b-48f6-bea2-bc3b49887596" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_26.a" valueType="string"/>
+							<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Retained earnings" valueType="string"/>
+							<property name="id" value="32b7e230-9eec-4f9e-a6ff-5883d341ab52" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3247" valueType="string"/>
+									<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Retained earnings" valueType="string"/>
+									<property name="id" value="ee7e7437-e64f-46c9-9866-b631ef6f8264" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3247"{a2d32f48-16e6-417b-9a11-40c530c63946:bd15685c-8f70-4326-a33e-8915308a76cd}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_26.b" valueType="string"/>
+							<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Accumulated other comprehensive income" valueType="string"/>
+							<property name="id" value="ed4aa7ae-3b23-4ace-b94b-e6c5b56293ea" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCKB530" valueType="string"/>
+									<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Accumulated other comprehensive income" valueType="string"/>
+									<property name="id" value="54d4a4bf-7814-4279-b26d-eda2dad1999d" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_B530"{a2d32f48-16e6-417b-9a11-40c530c63946:96b1fef7-ef2d-4f84-915a-85f0ff72cce5}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_26.c" valueType="string"/>
+							<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Other equity capital components" valueType="string"/>
+							<property name="id" value="f2ce35ad-86a9-4954-9cf2-b4d67af7f128" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCKA130" valueType="string"/>
+									<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Other equity capital components" valueType="string"/>
+									<property name="id" value="afc6fb6c-fb1c-4ede-9839-1ac4b4f4998a" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_A130"{a2d32f48-16e6-417b-9a11-40c530c63946:da2dc0eb-c3ae-4074-a9ed-385bec37fb3d}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="HC_27" valueType="string"/>
+					<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Noncontrolling (minority) interests in consolidated subsidiaries" valueType="string"/>
+					<property name="id" value="e6e319f1-e17e-448b-9235-4191cc4afee8" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="HC_27.b" valueType="string"/>
+							<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Noncontrolling (minority) interests in consolidated subsidiaries" valueType="string"/>
+							<property name="id" value="5209b35d-354b-42ca-9681-118be8c32c38" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="BHCK3000" valueType="string"/>
+									<property name="description" value="Equity Capital: Bank Holding Company Equity Capital: Noncontrolling (minority) interests in consolidated subsidiaries" valueType="string"/>
+									<property name="id" value="3d93e57c-425d-42e3-b998-b68f7705413d" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MDRM_3000"{a2d32f48-16e6-417b-9a11-40c530c63946:569923d3-0153-456d-9cd0-55d7b839ed56}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+				<objectNode type="Portfolio:node" version="7">
+					<property name="name" value="z_orphans" valueType="string"/>
+					<property name="description" value="Orphan Records" valueType="string"/>
+					<property name="id" value="4b0bc4ca-52c1-4929-acfd-12e5f13ef8d6" valueType="string"/>
+					<property name="comment" value="11-June-2010 at 15:00&#xa;1) Model RDW_9C_Baseline_PnL to C245 and C249 per SRS #11136159" valueType="string"/>
+					<property name="condition" valueType="tree">
+						<objectNode type="Condition" version="3">
+							<property name="isNegated" value="false" valueType="boolean"/>
+							<property name="groupingOperator" value="AND" valueType="string"/>
+							<children>
+								<objectNode type="Condition:shorthand" version="3">
+									<property name="shorthand" valueType="url">Shorthand["shorthands:MISC_Is_Orphaned"{a2d32f48-16e6-417b-9a11-40c530c63946:8df175b5-8c99-40aa-908d-1969cd7a1795}]</property>
+									<property name="operation" value="=" valueType="string"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</property>
+					<property name="expandedConditions" valueType="object">
+						<object type="Portfolio:expandedConditions" version="1">
+							<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+							<property name="includeInherited" value="false" valueType="boolean"/>
+						</object>
+					</property>
+					<property name="actions" valueType="table"/>
+					<property name="modelRemoved" valueType="table"/>
+					<children>
+						<objectNode type="Portfolio:node" version="7">
+							<property name="name" value="z_orphans" valueType="string"/>
+							<property name="description" value="Orphan Records" valueType="string"/>
+							<property name="id" value="ddc9ce55-4156-4c7a-b421-cdd850453828" valueType="string"/>
+							<property name="condition" valueType="tree">
+								<objectNode type="Condition" version="3">
+									<property name="isNegated" value="false" valueType="boolean"/>
+									<property name="groupingOperator" value="AND" valueType="string"/>
+									<children>
+										<objectNode type="Condition:shorthand" version="3">
+											<property name="shorthand" valueType="url">Shorthand["shorthands:MISC_Is_Orphaned"{a2d32f48-16e6-417b-9a11-40c530c63946:8df175b5-8c99-40aa-908d-1969cd7a1795}]</property>
+											<property name="operation" value="=" valueType="string"/>
+										</objectNode>
+									</children>
+								</objectNode>
+							</property>
+							<property name="expandedConditions" valueType="object">
+								<object type="Portfolio:expandedConditions" version="1">
+									<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+									<property name="includeInherited" value="false" valueType="boolean"/>
+								</object>
+							</property>
+							<property name="actions" valueType="table"/>
+							<property name="modelRemoved" valueType="table"/>
+							<children>
+								<objectNode type="Portfolio:node" version="7">
+									<property name="name" value="z_orphans_HC" valueType="string"/>
+									<property name="description" value="Orphan Records" valueType="string"/>
+									<property name="id" value="4d97061b-cfd7-4f2f-a9c8-c474d1386c54" valueType="string"/>
+									<property name="comment" value="9/23 - TP&#xa;Changes from 4 character MDRM to 8 chanracter MDRM" valueType="string"/>
+									<property name="condition" valueType="tree">
+										<objectNode type="Condition" version="3">
+											<property name="isNegated" value="false" valueType="boolean"/>
+											<property name="groupingOperator" value="AND" valueType="string"/>
+											<children>
+												<objectNode type="Condition:shorthand" version="3">
+													<property name="shorthand" valueType="url">Shorthand["shorthands:MISC_Is_Orphaned"{a2d32f48-16e6-417b-9a11-40c530c63946:8df175b5-8c99-40aa-908d-1969cd7a1795}]</property>
+													<property name="operation" value="=" valueType="string"/>
+												</objectNode>
+											</children>
+										</objectNode>
+									</property>
+									<property name="expandedConditions" valueType="object">
+										<object type="Portfolio:expandedConditions" version="1">
+											<property name="dataModel" valueType="url">DataModel["client_data:Test_Data"{99ea454c-a66c-4366-9b09-224290114c3b:5a07b404-7b7f-44c8-9e49-71fb985168de}]</property>
+											<property name="includeInherited" value="false" valueType="boolean"/>
+										</object>
+									</property>
+									<property name="actions" valueType="table"/>
+									<property name="modelRemoved" valueType="table"/>
+								</objectNode>
+							</children>
+						</objectNode>
+					</children>
+				</objectNode>
+			</children>
+		</objectNode>
+	</property>
+	<property name="instanceRebuildRestriction" value="AlterFullRebuild" valueType="string"/>
+</object>
